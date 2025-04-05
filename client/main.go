@@ -28,15 +28,14 @@ func main() {
 	log.Println("Puerto:", puerto)
 	log.Println("Mensaje:", mensaje)
 
-	utils.LeerConsola()
-
 	// ADVERTENCIA: Antes de continuar, tenemos que asegurarnos que el servidor esté corriendo para poder conectarnos a él
 
 	// enviar un mensaje al servidor con el valor de la config
-	// utils.EnviarMensaje(ip, puerto, mensaje)
+	utils.EnviarMensaje(ip, puerto, mensaje)
+
 	// leer de la consola el mensaje
 	// utils.LeerConsola()
 
 	// generamos un paquete y lo enviamos al servidor
-	// utils.GenerarYEnviarPaquete()
+	utils.GenerarYEnviarPaquete(ip,puerto)
 }
